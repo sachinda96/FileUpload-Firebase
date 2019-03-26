@@ -5,6 +5,7 @@
 <br>
 <progress max="100"  [value]="(uploadProgress | async)">uploading</progress>
 <br>
+<h5 *ngIf="(uploadProgress | async)==100">upload sucsess</h5>
 <br>
 <button (click)="getImage()">Download Image</button>
 <br>

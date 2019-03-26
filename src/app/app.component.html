@@ -1,8 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <h2 >Image Upload Firebase</h2>
 <h5>Add Image : </h5>
+<div>
   <input type="file" (change)="upload($event)" accept=".png,.jpg" />
-<br>
+</div>
+  <br>
 <progress max="100"  [value]="(uploadProgress | async)">uploading</progress>
 <br>
 <h5 *ngIf="(uploadProgress | async)==100">upload sucsess</h5>
